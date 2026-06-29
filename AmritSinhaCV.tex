@@ -1,0 +1,180 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Amrit Sinha} \\ \vspace{1pt}
+    \small +919958508011 $|$ \href{mailto:amrit-sinha@outlook.com}{\underline{amrit-sinha@outlook.com}} $|$
+    \href{https://linkedin.com/in/amritksinha}{\underline{LinkedIn}} $|$
+    \href{https://github.com/amrit-sinha}{\underline{Github}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {BITS Pilani}{}
+      {B.E. (Hons.) Electronics and Instrumentation}{2020 -- 2024}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+
+\resumeSubheading
+  {Instahyre}{March 2025 -- June 2026}
+  {SDE 1}{}
+  \resumeItemListStart
+    \resumeItem{\textbf{Tech Stack: Python, Django, MySQL, Redis, RabbitMQ, Elasticsearch, React, Jinja, HTML, CSS}}
+    \resumeItem{Built a \textbf{TypeScript MCP stdio server} integrating AI reviewers with Phabricator, automating review-context generation from Differential diffs, changed files, and linked tasks.}
+    \resumeItem{Integrated \textbf{AI coding assistants (Claude Code, GPT-Codex)} into the development workflow to automate boilerplate generation and feature scaffolding, enabling faster iteration and improved developer productivity.}
+    \resumeItem{Implemented a \textbf{Redis-based sliding window rate limiter} using Lua scripts for atomic execution, throttling outbound emails to comply with AWS SES limits.}
+    \resumeItem{Optimized \textbf{high-traffic API endpoints} with \textbf{p99 latencies exceeding 1000ms}, reducing them to under \textbf{300ms}.}
+    \resumeItem{Designed and implemented a \textbf{Redis-backed OTP verification flow}, preventing premature database updates and ensuring secure phone number and email changes.}
+    \resumeItem{Led a \textbf{large-scale refactor} to modularize the candidate-side application, reducing code coupling and accelerating feature development.}
+    \resumeItem{Built and upgraded \textbf{UI components} using Jinja Templates, HTML, and custom CSS, improving responsiveness and maintainability.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {ofScale}{Nov 2024 -- Jan 2025}
+  {Full Stack Engineer Intern}{}
+  \resumeItemListStart
+    \resumeItem{\textbf{Tech Stack: JavaScript, React.js, Next.js, Tailwind CSS, Golang, MySQL}}
+    \resumeItem{Developed and implemented the \textbf{mobile view} for the entire admin management website.}
+    \resumeItem{Developed a \textbf{cron scheduler in Go} utilizing the gocron library, from initial design to final implementation.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Zluri Technologies}{Jul 2023 -- Dec 2023}
+  {Full Stack Engineer Intern}{}
+  \resumeItemListStart
+    \resumeItem{\textbf{Tech Stack: JavaScript, Node.js, React.js, Next.js, Express.js, MongoDB, PostgreSQL}}
+    \resumeItem{Built a \textbf{currency conversion feature} leveraging the Exchange Rate API to provide real-time and historical exchange rates.}
+    \resumeItem{Migrated APIs to a new database architecture, reducing \textbf{response times by nearly 40\%}.}
+  \resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\href{https://github.com/amrit-sinha/multimodal-rag}{\textbf{\underline{Multimodal RAG Backend}}} $|$ \textbf{Python, FastAPI, Celery, Redis, PostgreSQL, Docker}}{2026}
+          \resumeItemListStart
+            \resumeItem{Built a \textbf{document Q\&A backend} (FastAPI) for PDF/image uploads with RAG and page-level citations.}
+            \resumeItem{Designed an \textbf{async ingestion flow} with presigned \textbf{MinIO} uploads and a \textbf{background Celery worker} that indexes files with pollable ingestion job status and retries.}
+           \resumeItem{Implemented \textbf{text and image retrieval} over Postgres + pgvector using \textbf{BGE} for passages and \textbf{CLIP} for images, feeding matched sources to \textbf{Gemma4 (12b)} via \textbf{Ollama} for grounded, cited answers.}
+            \resumeItem{Added \textbf{SSE streaming}, optional API-key auth, Redis rate limiting, and Docker Compose deployment.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Concepts}{: Data Structures, Algorithms, Object-Oriented Programming, Operating Systems, Computer Networks, System Design (HLD, LLD)} \\
+     \textbf{Languages}{: JavaScript, TypeScript, Golang, Java, Python, C, C++, HTML5, CSS3, SQL} \\
+     \textbf{Frameworks \& Libraries}{: React.js, Next.js, Redux, Angular, Node.js, Express.js, Bun.js, Django, Django Rest Framework, FastAPI, Celery, Tailwind CSS, Bootstrap, Jinja} \\
+     \textbf{Databases, \& Messaging}{: PostgreSQL, MySQL, MongoDB, Elasticsearch, pgvector, Redis, RabbitMQ, Kafka} \\
+     \textbf{Tools \& AI}{: Git, Linux, Docker, Kubernetes, AWS, Figma, Mercurial, Claude Code, GPT-Codex, RAG, MCP}
+    }}
+ \end{itemize}
+
+
+%
+
+%-------------------------------------------
+\end{document}
